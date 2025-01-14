@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+   <html lang="ru">
+   <head>
+       <meta charset="UTF-8">
+       <title>Мой сайт</title>
+   </head>
+   <body>
+       <h1 id="text">Здесь появится текст.</h1>
+       <script>
+           // Здесь будет код для обновления текста на странице
+           fetch('https://github.com/TertingWorker/ChiloviyAndGrinchLog.git')
+               .then(response => response.text())
+               .then(data => document.getElementById('text').innerText = data);
+       </script>
+   </body>
+   </html>
